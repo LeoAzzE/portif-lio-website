@@ -1,0 +1,38 @@
+.header {
+    font-family: 'Cormorant Garamond', serif;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    background-color: black;
+}
+.header h1 {
+    margin: 100px;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    color: #fff;
+    animation-iteration-count: infinite; 
+}
+
+.header ul {
+    list-style: none;
+    font-weight: bold;
+    margin: 100px;
+}
+
+.header li {
+    font-size: 1.3rem;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.header li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    height: 60px;
+}
