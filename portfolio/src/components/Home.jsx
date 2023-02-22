@@ -1,5 +1,4 @@
 import styles from './Home.module.css'
-import photo from '../assets/myPhoto2.jpg'
 import linkedin from '../assets/linkedin.jpg'
 import github from '../assets/github.png'
 import avatar from '../assets/avatar.png'
