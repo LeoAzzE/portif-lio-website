@@ -1,0 +1,12 @@
+.wrapper {
+    background-color: black;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 155px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.title {
+    color: white;
+}
