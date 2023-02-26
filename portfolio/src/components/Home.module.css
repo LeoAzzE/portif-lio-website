@@ -1,4 +1,5 @@
 .wrapperHome {
+    font-family: 'Cormorant Garamond', serif;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
@@ -90,4 +91,61 @@ gap: 10px;
 
 .githubLink img {
     width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .myimg {
+        width: 120px;
+        height: 120px;
+        margin-top: 1rem;
+    }
+
+    .wrapperHome {
+        margin-top: 10px;
+        width: 350px;
+        width: 350px;
+        flex-direction: column-reverse;
+    }
+    .texts > span {
+        font-size: 25px;
+        color: #45e445;
+    }
+    
+    .texts div {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .texts {
+        margin-top: -40px;
+    }
+
+    .links {
+        margin-top: 3px;
+    }
+
+    .linkedinLink {
+        width: 90px;
+        height: 40px;
+    }
+
+    .linkedinLink img {
+        width: 18px;
+    }
+    
+    .linkedinLink div {
+        font-size: 15px;
+    }
+
+    .githubLink div {
+        font-size: 15px;
+    }
+    
+    .githubLink img {
+        width: 18px;
+    }
+    .githubLink {
+        width: 90px;
+        height: 40px;
+    }
 }

@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
 .title {
+    font-family: 'Poppins', sans-serif;
     color: white;
     text-align: center;
-    font-size: 35px;
+    font-size: 28px;
     margin-bottom: 50px;
+    margin-top: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 .cardImage {
@@ -21,6 +28,9 @@
 }
 
 .slideContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 20px;
 }
 

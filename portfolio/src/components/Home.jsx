@@ -6,7 +6,7 @@ import avatar from '../assets/avatar.png'
 export function Home() {
     return (
         <div>
-        <section className={styles.wrapperHome}>
+        <section id='home' className={styles.wrapperHome}>
             <div className={styles.texts}>
                 <div className="animate__animated animate__backInDown animate__delay-1s">Olá, meu nome é</div>
                 <span className="animate__animated animate__fadeInTopLeft animate__delay-1s">Leonardo Chaves</span>

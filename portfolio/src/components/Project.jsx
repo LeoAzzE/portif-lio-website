@@ -6,29 +6,30 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import {Pagination, Navigation, FreeMode} from "swiper";
 import photo from '../assets/avatar.png'
+import { v4 as uuidv4 } from 'uuid';
 
 const data = [
     {
         name: 'calculadora',
-        id: 1,
+        id: uuidv4(),
         description: 'loremsdasadasdasdasdasdddddddddd',
         src: photo
     },
     {
         name: 'lista de tarefas',
-        id: 2,
+        id: uuidv4(),
         description: 'loremsdasadasdasdasdasddddddddddd',
         src: photo
     },
     {
         name: 'lista de tarefas',
-        id: 2,
+        id: uuidv4(),
         description: 'loremsdasadasdasdasdasddddddddddd',
         src: photo
     },
     {
         name: 'lista de tarefas',
-        id: 2,
+        id: uuidv4(),
         description: 'loremsdasadasdasdasdasddddddddddd',
         src: photo
     },
@@ -37,6 +38,7 @@ const data = [
 export function Project() {
     return (
         <div>
+            <section id='project'>
             <div className={styles.title}>
                 <h1>Projetos</h1>
             </div>
@@ -44,6 +46,7 @@ export function Project() {
             grabCursor={true}
             navigation={true} modules={[Navigation, Pagination, FreeMode]} className="mySwiper"
             pagination={{clickable: true}}
+            scrollbar={{ draggable: true }}
             slidesPerView={"auto"}
             freeMode={true}
             breakpoints={{
@@ -60,7 +63,10 @@ export function Project() {
                     spaceBetween: 15,
                 }
             }}
-            >      
+            >
+            <div className={styles.slideContainer}>
+                
+            </div>      
         {data.map(element => (          
             <SwiperSlide key={element.id}>
                                 <div className={styles.slideContent}>
@@ -86,6 +92,7 @@ export function Project() {
             </SwiperSlide>
         ))}
             </Swiper>
+            </section>
             </div>
     )
         
