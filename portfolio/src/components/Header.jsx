@@ -7,10 +7,10 @@ import { Contact } from './Contact'
 import { useState } from 'react';
 
 
-
 export function Header() {
         const [active, setActive] = useState("nav__menu");
         const [icon, setIcon] = useState("nav__toggler");
+
         const navToggle = () => {
         if (active === "nav__menu") {
             setActive("nav__menu nav__active");
@@ -24,27 +24,27 @@ export function Header() {
             return (
                       <nav className="nav">
                         <a  href="#home" className="nav__brand ">
-                        <div className="animate__animated animate__heartBeat">LeoAzzE</div>
+                        <div className="animate__animated animate__heartBeat">&lt; LeoAzzE /&gt;</div>
                         </a>
                         <ul className={active}>
                           <li className="nav__item">
-                            <a href="#home" className="nav__link">
+                            <a onClick={navToggle} href="#home" className="nav__link">
                               Home
                             </a>
                           </li>
                           <li className="nav__item">
-                            <a href="#about" className="nav__link">
-                              Sobre
+                            <a onClick={navToggle} href="#project" className="nav__link">
+                              Projetos
                             </a>
                           </li>
                           <li className="nav__item">
-                            <a href="#project" className="nav__link">
-                             Projetos
+                            <a onClick={navToggle} href="#about" className="nav__link">
+                             Sobre
                             </a>
                           </li>
                           <li className="nav__item">
-                            <a href="#contact" className="nav__link">
-                              Contatos
+                            <a onClick={navToggle} href="#contact" className="nav__link">
+                              Contato
                             </a>
                           </li>
                         </ul>

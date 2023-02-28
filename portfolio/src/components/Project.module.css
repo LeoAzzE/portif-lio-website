@@ -27,6 +27,10 @@
     background-color: #FFF;
 }
 
+.cardContent p {
+    font-size: 15px;
+}
+
 .slideContent {
     display: flex;
     align-items: center;
@@ -100,12 +104,17 @@
     border: none;
     font-size: 16px;
     color: #FFF;
-    padding: 8px 16px;
+    padding: 8px 8px;
     background-color:#4070f4 ;
     border-radius: 6px;
     margin: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+.button a {
+    display: flex;
+    align-items: center;
 }
 
 .button:hover {

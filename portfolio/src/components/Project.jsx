@@ -6,32 +6,42 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import {Pagination, Navigation, FreeMode} from "swiper";
 import photo from '../assets/avatar.png'
+import list from '../assets/todo.png'
+import pizzaria from '../assets/pizzaria.png'
+import velha from '../assets/velha.png'
+import feed from '../assets/feed.png'
 import { v4 as uuidv4 } from 'uuid';
+
+
 
 const data = [
     {
-        name: 'calculadora',
+        name: 'Pizzaria',
         id: uuidv4(),
-        description: 'loremsdasadasdasdasdasdddddddddd',
-        src: photo
+        description: 'Layout de um cardápio de uma pizzaria criado com HTML e CSS',
+        src: pizzaria,
+        deploy: 'https://pizzarialeoaz.netlify.app'
     },
     {
         name: 'lista de tarefas',
         id: uuidv4(),
-        description: 'loremsdasadasdasdasdasddddddddddd',
-        src: photo
+        description: 'Lista de tarefas feita com conceitos básicos de ReactJS + Typescript',
+        src: list,
+        deploy: 'https://leoazze.github.io/vite-gh-pages/'
     },
     {
-        name: 'lista de tarefas',
+        name: 'Jogo da velha',
         id: uuidv4(),
-        description: 'loremsdasadasdasdasdasddddddddddd',
-        src: photo
+        description: 'Jogo da velha realizado com HTML, CSS e JavaScript',
+        src: velha,
+        deploy: 'https://tictactoeleo.netlify.app'
     },
     {
-        name: 'lista de tarefas',
+        name: 'Feed de postagens',
         id: uuidv4(),
-        description: 'loremsdasadasdasdasdasddddddddddd',
-        src: photo
+        description: 'Projeto criado com ReactJS e Typescript do curso da rocketseat',
+        src: feed,
+        deploy: 'https://leoazze.github.io/ignite-Feed-deploy/'
     },
 ]
 
@@ -73,17 +83,15 @@ export function Project() {
                                     <div className={styles.cardWrapper}>
                                         <div className={styles.card}>
                                             <div className={styles.imageContent}>
-                                                <span className={styles.overlay}></span>
-
+                                              <span className={styles.overlay}></span>
                                                 <div className={styles.cardImage}>
-                                                    <img className={styles.cardImg} src={photo} alt="" />
+                                                    <img className={styles.cardImg} src={element.src} alt="" />
                                                 </div>
                                             </div>
-
                                             <div className={styles.cardContent}>
                                                 <h2 className={styles.name}>{element.name}</h2>
                                                 <p className={styles.description}>{element.description}</p>
-                                                <button className={styles.button}>View More</button>
+                                                <button className={styles.button}><a href={element.deploy} target="_blank">View More</a></button>
                                             </div>
                                         </div>
                                     </div>                            
