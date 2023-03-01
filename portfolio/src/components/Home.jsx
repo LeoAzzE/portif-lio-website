@@ -7,6 +7,14 @@ import tags from '../assets/tag.png'
 export function Home() {
     return (
         <div>
+            <div className={styles.circleMediaWrapper}>
+                <div className={styles.circles}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <span></span>
+                </div>
+            </div>
         <section id='home' className={styles.wrapperHome}>
         <div className={styles.circles}>
                 <div></div>

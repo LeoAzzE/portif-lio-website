@@ -24,6 +24,7 @@
     padding: 1rem;
     color: #ddd;
     cursor: pointer;
+
 }
 
 .skillBox:hover > .skillTitle:after, .skillBox:hover > .skillTitle:before {
@@ -41,6 +42,7 @@
     padding: 0.5rem;
     margin-bottom: 0.5rem;
     position: relative;
+    overflow: hidden;
 }
 
 .skillTitle:after {
