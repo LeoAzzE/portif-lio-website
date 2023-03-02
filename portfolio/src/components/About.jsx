@@ -28,7 +28,7 @@ const data = [
         id: uuidv4(),
         src: js,
         content: "JavaScript",
-        description: "JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma"
+        description: "JavaScript é uma linguagem de programação interpretada estruturada de script em alto nível."
     },
     {
         id: uuidv4(),
@@ -40,13 +40,13 @@ const data = [
         id: uuidv4(),
         src: java,
         content: "Java",
-        description: "Java é uma linguagem back-end multiplataforma, orientada a objetos e centrada em rede que pode ser usada como uma plataforma em si. É uma linguagem de programação rápida, segura e confiável para codificar tudo."
+        description: "Java é uma linguagem back-end orientada a objetos. É uma linguagem de programação rápida, segura e confiável para codificar tudo."
     },
     {
         id: uuidv4(),
         src: python,
         content: "Python",
-        description: "Python é uma linguagem de programação back-end de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte."
+        description: "Python é uma linguagem de programação back-end de alto nível orientada a objetos, funcional, de tipagem dinâmica e forte."
     },
     {
         id: uuidv4(),
@@ -58,7 +58,7 @@ const data = [
         id: uuidv4(),
         src: git,
         content: "Git",
-        description: "É um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo."
+        description: "É um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software."
     },
 ]
 
@@ -74,7 +74,7 @@ export function About() {
                         <img className={styles.img} src={photo} alt="photo"/>
                         <blockquote>
                             Me chamo Leonardo Chaves, moro no RJ, sou graduado em Ciências contábeis, porém me encantei pela área da tecnologia
-                            e venho estudando desenvolvimento web desde então, estou matriculado em uma universidade, realizando o curso de análise e desenvolvimento de sistemas, atualmente estou no 3° período, não consegui escolher entre back-end e front-end, então eu estudo um pouco dos dois. Criei essa page(com alguns conceitos básicos de reactJS) para mostrar alguns projetos que realizei, espero que gostem !
+                            e venho estudando desenvolvimento web desde então, estou matriculado em uma universidade, realizando o curso de análise e desenvolvimento de sistemas, atualmente estou no 3° período, não consegui escolher entre back-end e front-end, então eu estudo um pouco dos dois. Criei essa page (com alguns conceitos básicos de reactJS) para mostrar alguns projetos que realizei, espero que gostem !
                         </blockquote>
                         <h5>Leonardo Chaves</h5>
                         <p>desenvolvedor web</p>

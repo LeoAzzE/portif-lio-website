@@ -23,7 +23,7 @@ export function Header() {
         };
             return (
                       <nav className="nav">
-                        <a  href="#home" className="nav__brand ">
+                        <a  href="/" className="nav__brand ">
                         <div className="animate__animated animate__heartBeat">&lt; LeoAzzE /&gt;</div>
                         </a>
                         <ul className={active}>
