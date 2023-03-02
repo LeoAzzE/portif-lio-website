@@ -1,11 +1,10 @@
 import styles from './Project.module.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import React, { useRef, useState } from "react";
+import React from "react";
 import 'swiper/css'
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import {Pagination, Navigation, FreeMode} from "swiper";
-import photo from '../assets/avatar.png'
 import list from '../assets/todo.png'
 import pizzaria from '../assets/pizzaria.png'
 import velha from '../assets/velha.png'
@@ -47,11 +46,10 @@ const data = [
 
 export function Project() {
     return (
-        <div>
             <section id='project'>
-            <div className={styles.title}>
-                <h1>Projetos</h1>
-            </div>
+                <div className={styles.title}>
+                    <h1>Projetos</h1>
+                </div>
             <Swiper
             grabCursor={true}
             navigation={true} modules={[Navigation, Pagination, FreeMode]} className="mySwiper"
@@ -79,29 +77,28 @@ export function Project() {
             </div>      
         {data.map(element => (          
             <SwiperSlide key={element.id}>
-                                <div className={styles.slideContent}>
-                                    <div className={styles.cardWrapper}>
-                                        <div className={styles.card}>
-                                            <div className={styles.imageContent}>
-                                              <span className={styles.overlay}></span>
-                                                <div className={styles.cardImage}>
-                                                    <img className={styles.cardImg} src={element.src} alt="" />
-                                                </div>
-                                            </div>
-                                            <div className={styles.cardContent}>
-                                                <h2 className={styles.name}>{element.name}</h2>
-                                                <p className={styles.description}>{element.description}</p>
-                                                <button className={styles.button}><a href={element.deploy} target="_blank">View More</a></button>
+                            <div className={styles.slideContent}>
+                                <div className={styles.cardWrapper}>
+                                    <div className={styles.card}>
+                                        <div className={styles.imageContent}>
+                                            <span className={styles.overlay}></span>
+                                            <div className={styles.cardImage}>
+                                                <img className={styles.cardImg} src={element.src} alt="cardImg" />
                                             </div>
                                         </div>
-                                    </div>                            
-                        </div>
+                                        <div className={styles.cardContent}>
+                                            <h2 className={styles.name}>{element.name}</h2>
+                                            <p className={styles.description}>{element.description}</p>
+                                            <button className={styles.button}><a href={element.deploy} target="_blank">View More</a></button>
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </div>
                         
             </SwiperSlide>
         ))}
             </Swiper>
             </section>
-            </div>
     )
         
 }

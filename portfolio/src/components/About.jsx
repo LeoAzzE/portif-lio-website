@@ -66,12 +66,11 @@ const data = [
 
 export function About() {
     return(
-        <div>
             <section id='about' className={styles.wrapper}>
                 <div className={styles.testimonial}>
                     <article>
                         <h1>Sobre mim</h1>
-                        <img className={styles.img} src={photo} alt="photo"/>
+                        <img className={styles.img} src={photo} alt="photoMe"/>
                         <blockquote>
                             Me chamo Leonardo Chaves, moro no RJ, sou graduado em Ciências contábeis, porém me encantei pela área da tecnologia
                             e venho estudando desenvolvimento web desde então, estou matriculado em uma universidade, realizando o curso de análise e desenvolvimento de sistemas, atualmente estou no 3° período, não consegui escolher entre back-end e front-end, então eu estudo um pouco dos dois. Criei essa page (com alguns conceitos básicos de reactJS) para mostrar alguns projetos que realizei, espero que gostem !
@@ -92,8 +91,6 @@ export function About() {
                         </div>
                     </section>
                 </div>
-
             </section>
-        </div>
     )
 }

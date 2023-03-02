@@ -1,9 +1,5 @@
 import './Header.css';
 import 'animate.css';
-import {  Home  } from './Home'
-import { Project } from './Project'
-import { About } from './About'
-import { Contact } from './Contact'
 import { useState } from 'react';
 
 

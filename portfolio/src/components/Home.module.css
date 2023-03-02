@@ -84,7 +84,6 @@
 }
 
 .texts {
-
 display: flex;
 flex-direction: column;
 gap: 10px;
@@ -191,6 +190,14 @@ gap: 10px;
 }
 
 @media screen and (max-width: 999px) {
+    .wrapperHome {
+        margin-top: -70px;
+    }
+
+    .myimg {
+        margin-bottom: 30px;
+    }
+
     .wrapperHome > .circles {
         display: none;
         width: 60px;

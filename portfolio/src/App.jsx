@@ -18,16 +18,16 @@ export function App() {
         <div >
             <Header />
             <div data-aos="zoom-in">
-            <Home />           
+                <Home />           
             </div>
             <div data-aos="flip-left" className={styles.slideContainer}>
                 <Project />
             </div>
-            <span 
-                data-aos="fade-up">
-            <About />
+            <span data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="2000">
+                <About />
             </span>
-
             <Contact />                
         </div>
 

@@ -85,6 +85,10 @@ article p {
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem 50px;
     }
+
+    article h1 {
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width: 650px) {
